@@ -1,8 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerInputController : TopDownController
 {
+
+
+
     private Camera _camera;
     private void Awake()
     {
@@ -15,4 +20,5 @@ public class PlayerInputController : TopDownController
         CallMoveEvent(moveInput);
 
     }
+
 }
